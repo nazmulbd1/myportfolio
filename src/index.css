@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Dark theme (default) — values are "R G B" so Tailwind can add opacity */
+  --color-ink: 20 23 31;
+  --color-ink-soft: 27 31 41;
+  --color-ink-softer: 35 40 55;
+  --color-ink-line: 42 47 59;
+  --color-paper: 236 233 226;
+  --color-muted: 154 160 174;
+  --color-gold: 216 169 78;
+  --color-gold-dim: 183 143 65;
+  --color-teal: 79 138 130;
+  --color-teal-dim: 60 107 101;
+}
+
+html.light {
+  /* Light theme overrides */
+  --color-ink: 246 244 239;
+  --color-ink-soft: 255 255 255;
+  --color-ink-softer: 236 232 223;
+  --color-ink-line: 223 218 208;
+  --color-paper: 27 29 33;
+  --color-muted: 99 104 116;
+  --color-gold: 181 128 45;
+  --color-gold-dim: 150 104 35;
+  --color-teal: 42 103 96;
+  --color-teal-dim: 32 80 74;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+body {
+  @apply bg-ink text-paper font-body antialiased;
+}
+
+::selection {
+  background-color: #D8A94E;
+  color: #14171F;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #14171F;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2F3B;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a4152;
+}
+
+.container-1420 {
+  @apply max-w-content mx-auto px-6 lg:px-10;
+}
