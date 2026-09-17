@@ -21,14 +21,14 @@ export const profile = {
     "I build clean, responsive interfaces with React and Tailwind CSS — and right now I'm leveling up into full-stack development.",
   intro:
     "I finished my frontend journey covering HTML, CSS, Bootstrap, JavaScript, React and Tailwind CSS, and Next.js. Now I'm learning the backend half of the stack — Node.js, TypeScript, Express.js and MongoDB — so I can ship complete products end to end.",
-  location: 'Bangladesh',
-  email: 'your.email@example.com',
-  phone: '+880 1XXXXXXXXX',
+  location: 'Dhaka, Bangladesh',
+  email: 'nazmulsheikhnahid@gmail.com',
+  phone: '+880 1748052136',
   cvPath: '/cv.pdf', // replace public/cv.pdf with your real CV (same filename, or update this path)
   socials: {
-    facebook: 'https://facebook.com/your-username',
-    x: 'https://x.com/your-username',
-    instagram: 'https://instagram.com/your-username',
+    facebook: 'https://facebook.com/nazmulsheikhnahid.1',
+    x: 'https://x.com/NazmulSheikhNa2',
+    instagram: 'https://instagram.com/nazmulsheikhnahid',
     github: 'https://github.com/nazmulbd1',
     linkedin: 'https://linkedin.com/in/your-username',
   },
