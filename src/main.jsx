@@ -3,8 +3,14 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const rootEl = document.getElementById('root')
+
+ReactDOM.createRoot(rootEl).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
 )
+
+window.setTimeout(() => {
+  rootEl.classList.add('is-ready')
+}, 0)

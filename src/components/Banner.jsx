@@ -1,7 +1,6 @@
 import { Download, ArrowDown, Facebook, Instagram, Github } from 'lucide-react'
 import { profile } from '../data/portfolioData'
 import XIcon from './icons/XIcon'
-import nazmulProfile from '../assets/nazmulsheikh1.webp'
 
 const socialLinks = [
   { href: profile.socials.facebook, label: 'Facebook', Icon: Facebook },
@@ -69,7 +68,16 @@ export default function Banner() {
               Replace this block with your real photo, e.g.:
               <img src="/profile.jpg" alt={profile.name}  />
             */}
-            <img className="absolute w-full h-full object-cover" src={nazmulProfile} alt="nazmulsheikh1.webp" />
+            <img
+              className="absolute w-full h-full object-cover"
+              src="/nazmulsheikh1.webp"
+              alt="Nazmul Sheikh Nahid"
+              width={400}
+              height={500}
+              decoding="async"
+              fetchpriority="high"
+              loading="eager"
+            />
             <span className="font-display font-bold text-7xl text-ink-line select-none">NS</span>
           </div>
         </div>

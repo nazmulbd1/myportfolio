@@ -2,18 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2314171F'/%3E%3Ctext x='50' y='64' font-size='42' font-family='monospace' fill='%23D8A94E' text-anchor='middle'%3ENS%3C/text%3E%3C/svg%3E" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#14171F" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F6F4EF" media="(prefers-color-scheme: light)" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="description" content="Nazmul Sheikh Nahid — Frontend Developer building React & Tailwind experiences, currently learning backend development with Node.js, Express and MongoDB." />
     <title>Nazmul Sheikh Nahid | Frontend Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2314171F'/%3E%3Ctext x='50' y='64' font-size='42' font-family='monospace' fill='%23D8A94E' text-anchor='middle'%3ENS%3C/text%3E%3C/svg%3E" />
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2314171F'/%3E%3Ctext x='50' y='64' font-size='42' font-family='monospace' fill='%23D8A94E' text-anchor='middle'%3ENS%3C/text%3E%3C/svg%3E" />
+
     <script>
       (function () {
         try {
@@ -25,6 +26,44 @@
         } catch (e) {}
       })()
     </script>
+
+    <style>
+      html, body { background-color: #14171F; color: #ECE9E2; }
+      html.light, html.light body { background-color: #F6F4EF; color: #1B1D21; }
+      html { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+      #root { opacity: 0; transition: opacity 0.12s ease; }
+      #root.is-ready { opacity: 1; }
+    </style>
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap&display=swap&subset=latin"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap&display=swap&subset=latin"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <link
+      rel="preload"
+      href="/nazmulsheikh1.webp"
+      as="image"
+      type="image/webp"
+      imagesrcset="/nazmulsheikh1.webp 400w"
+      imagesizes="(max-width: 1024px) 100vw, 34vw"
+      fetchpriority="high"
+    />
+  </head>
+  <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
